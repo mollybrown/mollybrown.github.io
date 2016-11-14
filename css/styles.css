@@ -96,6 +96,7 @@ table {
 h1, h2, h3, h4, h5, p, a {
   font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 22px;
+  color: #0062a0;
 }
 
 h1 {
@@ -103,8 +104,16 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+}
+
+p {
+  color: #004a79;
+}
+
 a {
-  color: #0062a0;
   text-decoration: none;
 }
 
@@ -133,7 +142,6 @@ header a {
   position: relative;
   text-decoration: none;
   margin-bottom: 10px;
-  margin-left: 5px;
   margin-right: 5px;
 }
 
@@ -156,6 +164,10 @@ header a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.post {
+  padding-top: 50px;
 }
 
 .hero {
