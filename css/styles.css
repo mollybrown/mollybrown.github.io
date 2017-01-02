@@ -1,211 +1,40 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	/*background-color: #165faa;*/
+	/*background-color: #e9685c;*/
+	background-color: #faf3e1;
+	color: #111722;
 }
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 960px;
-	height: 100%;
-}
-
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-
-h1, h2, h3, h4, h5, p, a {
-  font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 22px;
-  color: #0062a0;
-}
-
-h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 60px;
-}
-
-h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
-}
-
-p {
-  color: #004a79;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-p a {
-	text-decoration: underline;
-}
-
-blockquote {
-	margin-left: 50px;
-}
-
-/*
-  ======================================
-  Icons
-  ======================================
-*/
-
-.fa {
-  color: #0062a0;
-}
-
-/*
-  ========================================
-  Home
-  ========================================
-*/
-
-header {
-  padding-top: 50px;
-  text-align: left;
-}
-
-header a {
-  position: relative;
-  text-decoration: none;
-  margin-bottom: 10px;
-  margin-right: 5px;
-}
-
-header a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0062a0;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-header a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.post {
-  padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.hero {
-  color: #0062a0;
-  line-height: 44px;
-  padding-top: 22px;
-  padding-bottom: 66px;
-  text-align: left;
-}
-
-footer {
+.navbar {
 	display: block;
-	text-align:right;
-	padding-bottom: 50px;
-  /*clear:both;
-
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  padding-right:100px;
-  height:50px;*/
-  width:100%;
-	background-color: #ffffff
+	width: 100%;
+	height: 6.5rem;
+	/*background: #fff;*/
+	z-index: 99;
+	/*border-top: 1px solid #eee;*/
+	border-bottom: 1.5px solid #0fbbae;
 }
 
-footer a {
-	padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+		display: block;
+	}
+
+.navbar-item {
+    position: relative;
+    float: right;
+    margin-bottom: 0;
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    /*color: #3e63b4;*/
+		color: #ff512c;
 }
