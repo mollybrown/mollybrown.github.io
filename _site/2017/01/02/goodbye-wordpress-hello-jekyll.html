@@ -51,10 +51,13 @@
             </a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="post.html">Blog</a>
+            <a class="navbar-link" href="posts.html">Posts</a>
           </li>
           <li class="navbar-item">
             <a class="navbar-link" href="assets/docs/resume.pdf">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="projects.html">Projects</a>
           </li>
           <li class="navbar-item">
             <a class="navbar-link" href="index.html">Home</a>
@@ -65,15 +68,7 @@
   </div>
 
   <div class="container">
-    <p>It’s now 2017! Yay! While it’s internet-culture hip to complain that 2016 sucked
-and we’ve all just barely survived, I beg to differ. Within the past six months
-I’ve quit a job, started Turing, finally joined a women’s cycling team,
-completed the Udacity Front-End Development Nanodegree Program, and joined the
-board of a local non-profit. Suffice to say I am both short on time and excited
-about all that I am learning. However, there is still one thing that seemed to
-perpetually escape my ability to Get Shit Done - my personal website.</p>
-
-<p>Back in my days of working as a freelance photographer, I bought the domain name
+    <p>Back in my days of working as a freelance photographer, I bought the domain name
 <a href="http://mollyrachelbrown.com">mollyrachelbrown.com</a> to showcase my photography
 portfolio. I slapped a nice masonry Wordpress theme on top, uploaded some photos,
 and called it done. It did the job, but I could never quite escape the feeling that Wordpress
@@ -87,6 +82,53 @@ together a respectable front-end, I’ve decided to use <a href="https://jekyllr
 (a static site generator), <a href="https://pages.github.com/">Github Pages</a>, <a href="http://getskeleton.com/">Skeleton</a>
 (a lightweight responsive CSS grid system), and some domain name tweaking to ditch
 Wordpress and create my own site pointing to my old custom domain.</p>
+
+<p>Most tutorials on getting up and running with Jekyll assume you are creating a GitHub Pages,
+however I had already started a site a few weeks ago. Therefore, my Jekyll install was
+as easy as:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">project</span><span class="o">/</span>
+<span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span>
+<span class="err">$</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<p>That’s it! Well, at least in terms of things that has to be installed through the command line.
+Once installed, the real work was in re-organizing my existing files to fit the required
+Jekyll site structure, which in my case (as of writing this post) looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">├──</span> <span class="n">_config</span><span class="p">.</span><span class="nf">yml</span>
+<span class="err">├──</span> <span class="n">_layouts</span>
+<span class="o">|</span>   <span class="err">├──</span> <span class="n">default</span><span class="p">.</span><span class="nf">html</span>
+<span class="o">|</span>   <span class="err">└──</span> <span class="n">post</span><span class="p">.</span><span class="nf">html</span>
+<span class="err">├──</span> <span class="n">_posts</span>
+<span class="o">|</span>   <span class="err">├──</span> <span class="mi">2016</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">ruby</span><span class="o">-</span><span class="n">classes</span><span class="p">.</span><span class="nf">md</span>
+<span class="o">|</span>   <span class="err">└──</span> <span class="mi">2017</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="n">goodbye</span><span class="o">-</span><span class="n">wordpress</span><span class="o">-</span><span class="n">hello</span><span class="o">-</span><span class="n">jekyll</span><span class="p">.</span><span class="nf">md</span>
+<span class="err">├──</span> <span class="n">_site</span>
+<span class="err">├──</span> <span class="n">css</span>
+<span class="o">|</span>   <span class="err">├──</span> <span class="n">normalize</span><span class="p">.</span><span class="nf">css</span>
+<span class="o">|</span>   <span class="err">├──</span> <span class="n">skeleton</span><span class="p">.</span><span class="nf">css</span>
+<span class="o">|</span>   <span class="err">└──</span> <span class="n">styles</span><span class="p">.</span><span class="nf">css</span>
+<span class="err">├──</span> <span class="n">assets</span>
+<span class="err">├──</span> <span class="no">CNAME</span>
+<span class="err">└──</span> <span class="n">index</span><span class="p">.</span><span class="nf">html_</span></code></pre></figure>
+
+<p>Once I got the hang of the organizational structure and made the mental connection
+that the files in the layouts folder worked very similarly to an .erb partial, the
+rest was pretty smooth sailing. It helps that Jekyll has been around for a while and
+has great documentation as well in case you get stuck. However, the one major hurdle
+I faced came from when accidentally capitalized “layout” in the front matter block
+and subsequently spent 30min wondering how I had inexplicably broken things.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="no">Layout</span><span class="p">:</span> <span class="n">default</span> <span class="c1">#BAD!</span>
+<span class="ss">layout: </span><span class="n">default</span> <span class="c1">#GOOD!</span>
+<span class="o">---</span></code></pre></figure>
+
+<p>NEVER AGAIN.</p>
+
+<p>Anyways, once I felt comfortable with things, the last thing for me to do was push my
+changes to GitHub Pages and check out my new site. I did it, and this page is proof it
+worked! I’m exited to continue refining the look and functionality of the site, and
+and equally excited for how easy it is to make changes going forward.</p>
 
   </div>
 

@@ -1,11 +1,3 @@
-# name: ""
-# description: ""
-#
-# url: "http://localhost:4000"
-#
-# permalink: pretty
-# highlighter: true
-
 # Where things are
 source:       .
 destination:  ./_site
