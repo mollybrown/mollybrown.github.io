@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 Back in my days of working as a freelance photographer, I bought the domain name
 [mollyrachelbrown.com](http://mollyrachelbrown.com) to showcase my photography

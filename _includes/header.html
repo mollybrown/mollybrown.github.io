@@ -48,13 +48,13 @@
     <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a class="navbar-link home" href="/">Home</a>
+            <a class="navbar-link home" href="{{ site.baseurl }}{% link index.html %}">Home</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link posts" href="/posts.html">Posts</a>
+            <a class="navbar-link posts" href="{{ site.baseurl }}{% link posts.html %}">Posts</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link projects" href="/projects.html">Projects</a>
+            <a class="navbar-link projects" href="{{ site.baseurl }}{% link projects.html %}">Projects</a>
           </li>
           <li class="navbar-item">
             <a class="navbar-link resume" href="assets/docs/resume.pdf">Resume</a>
@@ -82,25 +82,3 @@
         </ul>
     </nav>
     </div>
-
-  <div class="container">
-  <section class="intro">
-    <h1>Latest Posts</h1>
-  </section>
-      
-        <div class="post">
-          <p class="post-date">02 Jan 2017</p>
-          <p><a class="post-link" href="/2017/01/02/goodbye-wordpress-hello-jekyll.html">Goodbye Wordpress Hello Jekyll</a></p>
-        </div>
-      
-        <div class="post">
-          <p class="post-date">13 Nov 2016</p>
-          <p><a class="post-link" href="/2016/11/13/ruby-classes.html">Ruby Classes</a></p>
-        </div>
-      
-
-</div>
-
-  </body>
-</html>
-

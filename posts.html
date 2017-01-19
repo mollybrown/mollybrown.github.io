@@ -7,7 +7,7 @@ layout: default
   </section>
       {% for post in site.posts %}
         <div class="post">
-          <em>{{ post.date | date_to_string }}</em>
+          <p class="post-date">{{ post.date | date_to_string }}</p>
           <p><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></p>
         </div>
       {% endfor %}

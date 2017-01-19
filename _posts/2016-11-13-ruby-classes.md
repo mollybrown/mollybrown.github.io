@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
   Since I am admittedly somewhat of a masochist, I am going to give my
   vote for favorite mod 1 concept to the one that caused me the most

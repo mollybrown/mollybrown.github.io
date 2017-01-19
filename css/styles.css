@@ -59,7 +59,6 @@
 }
 
 .posts:hover {
-
 	color: #EE6948;
 }
 
@@ -111,16 +110,54 @@
 
 .post-link {
 	text-transform: uppercase;
-	font-size: 13px;
+	text-decoration: none;
+	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: .2rem;
 	text-decoration: none;
 	color: #000;
 }
 
+.post-link:hover {
+	color: #EE6948;
+}
+
+.post-date {
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
 .post {
 	border-left: 2px solid #EE6948;
 	padding-left: 15px;
+}
+
+.blog-post {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.blog-post a {
+	text-decoration: none;
+	color: #EE6948;
+}
+
+.blog-intro {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.blog-intro h1 {
+	font-weight: 700;
+	font-size: 3.5em;
+}
+
+.blog-intro p {
+	font-weight: 300;
+	font-size: 1.5em;
+	color: #EE6948;
 }
 
 .project li {
@@ -129,20 +166,19 @@
 	font-size: 12px;
 	font-weight: 600;
 	letter-spacing: .2rem;
-	text-decoration: none;
 	color: #000;
 	list-style: none;
 	margin-bottom: 5px;
 }
 
 .project a {
-color: #000;
-text-decoration: none;
-background-color: #FED363;
+  color: #000;
+  text-decoration: none;
+  background-color: #FED363;
 }
 
 .project h3 {
-border-bottom: 2px solid #FED363;
+  border-bottom: 2px solid #FED363;
 }
 
 .project {
