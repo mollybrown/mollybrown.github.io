@@ -135,6 +135,12 @@
 	margin-bottom: 5px;
 }
 
+.project a {
+color: #000;
+text-decoration: none;
+background-color: #FED363;
+}
+
 .project h3 {
 border-bottom: 2px solid #FED363;
 }
@@ -142,6 +148,5 @@ border-bottom: 2px solid #FED363;
 .project {
 	font-family: 'Open Sans', sans-serif;
 	border-left: 2px solid #FED363;
-
 	padding-left: 15px;
 }
