@@ -14,9 +14,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+  <!-- FONTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,45 +30,59 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+  <script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
+
 </head>
 <body>
   <div class="container">
     <nav class="navbar">
-      <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a class="navbar-link" href="https://github.com/mollybrown" target="_blank">
+            <a class="navbar-link home" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link posts" href="posts.html">Posts</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link projects" href="projects.html">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link resume" href="assets/docs/resume.pdf">Resume</a>
+          </li>
+            <li class="navbar-item">
+            <a class="navbar-link github" href="https://github.com/mollybrown" target="_blank">
               <i class="fa fa-github fa-lg" aria-hidden="true"></i>
             </a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="https://www.linkedin.com/in/mollyrachelbrown" target="_blank">
+            <a class="navbar-link linkedin" href="https://www.linkedin.com/in/mollyrachelbrown" target="_blank">
               <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
             </a>
           <li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="https://twitter.com/mol_brown" target="_blank">
-              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="posts.html">Posts</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="assets/docs/resume.pdf">Resume</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="projects.html">Projects</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="index.html">Home</a>
-          </li>
+            <li class="navbar-item">
+              <a class="navbar-link twitter" href="https://twitter.com/mol_brown" target="_blank">
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link instagram" href="https://www.instagram.com/mol_brown/" target="_blank">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
         </ul>
-      </div>
     </nav>
-  </div>
+    </div>
 
-  <div class="container">
     <p>Since I am admittedly somewhat of a masochist, I am going to give my
   vote for favorite mod 1 concept to the one that caused me the most
   confusion: Classes.</p>
@@ -134,9 +149,6 @@ particular instance of it.”</p>
   relate - inappropriately or not - obscure philosophical
   concepts to programming.</p>
 
-  </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

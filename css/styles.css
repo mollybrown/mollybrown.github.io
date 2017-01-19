@@ -1,40 +1,147 @@
-body {
-	/*background-color: #165faa;*/
-	/*background-color: #e9685c;*/
-	background-color: #faf3e1;
-	color: #111722;
-}
+/* #FFFAE7 Cream */
+/* #FED363 Gold */
+/* #EE6948 Orange */
+/* #FF00B4 Hot Pink */
+/* #5DBDB1 Teal */
+/* #6583C3 Royal Blue */
+/* #1E2144 Midnight Blue */
 
 .navbar {
 	display: block;
 	width: 100%;
 	height: 6.5rem;
-	/*background: #fff;*/
+	background: #fff;
 	z-index: 99;
-	/*border-top: 1px solid #eee;*/
-	border-bottom: 1.5px solid #0fbbae;
 }
 
 .navbar-list {
     list-style: none;
     margin-bottom: 0;
-		display: block;
+		display: blob
 	}
 
 .navbar-item {
     position: relative;
-    float: right;
+    float: left;
     margin-bottom: 0;
 }
 
 .navbar-link {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: .2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    /*color: #3e63b4;*/
-		color: #ff512c;
+		color: #000;
+		transition: color .5s ease,border-color .5s ease,background .5s ease,opacity 1.5s ease;
+}
+
+.current-location {
+	color: #5DBDB1;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.instagram:hover {
+  color: #a600cc;
+}
+
+.github:hover {
+  color: #FF00B4;
+}
+
+.linkedin:hover {
+  color: #1b86bc;
+}
+
+.posts:hover {
+
+	color: #EE6948;
+}
+
+.navbar-link.posts.current {
+  color: #EE6948;
+}
+
+.resume:hover {
+	color: #6583C3;
+}
+
+/*.navbar-link.resume.current {
+  color: #6583C3;
+}*/
+
+.projects:hover {
+	color: #FED363;
+
+}
+
+.navbar-link.projects.current {
+	color: #FED363;
+}
+
+.home:hover {
+	color: #5DBDB1;
+}
+
+.navbar-link.home.current {
+  color: #5DBDB1;
+}
+
+.intro {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.intro h1 {
+	font-weight: 700;
+	font-size: 3.5em;
+}
+
+.intro p {
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+.post-link {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .2rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.post {
+	border-left: 2px solid #EE6948;
+	padding-left: 15px;
+}
+
+.project li {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: .2rem;
+	text-decoration: none;
+	color: #000;
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.project h3 {
+border-bottom: 2px solid #FED363;
+}
+
+.project {
+	font-family: 'Open Sans', sans-serif;
+	border-left: 2px solid #FED363;
+
+	padding-left: 15px;
 }

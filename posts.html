@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="container">
+  <section class="intro">
+    <h1>Latest Posts</h1>
+  </section>
+      {% for post in site.posts %}
+        <div class="post">
+          <em>{{ post.date | date_to_string }}</em>
+          <p><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></p>
+        </div>
+      {% endfor %}
+
+</div>
