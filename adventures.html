@@ -8,19 +8,31 @@ layout: default
     <p>Photos, writing, and stunts by yours truly since 2008.</p>
   </section>
 
-  <div class="row">
-    <div class="six columns">
+
   {% for adventure in site.adventures %}
-
-      <div class="adventure">
-        <h3>{{ adventure.title }}</h3>
-        <a href="{{ adventure.url }}">
-          <img class="u-max-full-width" src="{{ adventure.img }}">
-        </a>
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    <div class="row">
+      <div class="six columns">
+        <div class="adventure">
+          <a href="{{ adventure.url }}">
+            <h3>{{ adventure.title }}</h3>
+            <img class="u-max-full-width" src="{{ adventure.img }}">
+          </a>
+        </div>
       </div>
-
-  {% endfor %}
+      {% else %}
+      <div class="six columns">
+        <div class="adventure">
+          <a href="{{ adventure.url }}">
+            <h3>{{ adventure.title }}</h3>
+            <img class="u-max-full-width" src="{{ adventure.img }}">
+          </a>
+        </div>
+      </div>
     </div>
+    {% endif %}
+  {% endfor %}
   </div>
 
 </div>
