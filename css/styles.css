@@ -234,6 +234,12 @@
   transform: translate(-50%, -50%);
 }
 
+.adventure-img {
+	border: 0;
+  display: block;
+  margin: auto;
+}
+
 footer {
 	height: 75px;
 }
