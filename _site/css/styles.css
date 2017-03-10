@@ -194,6 +194,27 @@
 	padding-left: 15px;
 }
 
+.adventure {
+  margin: 10px;
+  position: relative;
+}
+
+.adventure-intro {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.adventure-post {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.adventure-intro h1 {
+	font-weight: 700;
+	font-size: 3.5em;
+}
+
 .adventure h3 {
 	position: absolute;
 	background: rgba(0, 0, 0, 0.15);
@@ -212,12 +233,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.adventure {
-  margin: 10px;
-  position: relative;
-}
-
 
 footer {
 	height: 75px;

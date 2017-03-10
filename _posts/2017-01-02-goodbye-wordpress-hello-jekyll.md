@@ -8,7 +8,7 @@ and called it done. It did the job, but I could never quite escape the feeling t
 was rather heavy-handed for what I was trying to do. As my focus shifted away from
 photography and towards software development, the purpose of my personal site became
 confused yet I was unwilling to give up my domain. I procrastinated on what to do with it
-for an embarrasingly long time.
+for an embarrassingly long time.
 
 Not anymore! Armed with my newly-acquired skills in Ruby and the ability to piece
 together a respectable front-end, I've decided to use [Jekyll](https://jekyllrb.com/)
