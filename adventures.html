@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="container">
+
+  <section class="intro">
+    <h1>Adventure Journal</h1>
+    <p>Photos, writing, and stunts by yours truly since 2008.</p>
+  </section>
+
+  <div class="row">
+    <div class="six columns">
+  {% for adventure in site.adventures %}
+
+      <div class="adventure">
+        <h3>{{ adventure.title }}</h3>
+        <a href="{{ adventure.url }}">
+          <img class="u-max-full-width" src="{{ adventure.img }}">
+        </a>
+      </div>
+
+  {% endfor %}
+    </div>
+  </div>
+
+</div>

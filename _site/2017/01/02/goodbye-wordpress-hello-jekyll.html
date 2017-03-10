@@ -48,7 +48,7 @@
     <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a class="navbar-link home" href="/">Home</a>
+            <a class="navbar-link home" href="/index.html">Home</a>
           </li>
           <li class="navbar-item">
             <a class="navbar-link posts" href="/posts.html">Posts</a>
@@ -59,7 +59,10 @@
           <li class="navbar-item">
             <a class="navbar-link resume" href="assets/docs/resume.pdf">Resume</a>
           </li>
-            <li class="navbar-item">
+          <li class="navbar-item">
+            <a class="navbar-link adventures" href="/adventures.html">Adventure Journal</a>
+          </li>
+          <li class="navbar-item">
             <a class="navbar-link github" href="https://github.com/mollybrown" target="_blank">
               <i class="fa fa-github fa-lg" aria-hidden="true"></i>
             </a>
@@ -87,7 +90,7 @@
 <div class="container">
   <section class="blog-intro">
     <h1>Goodbye Wordpress Hello Jekyll</h1>
-    <p>02 January 2017</p>
+    <p>2017-01-02 00:00:00 -0700</p>
   </section>
   <section class="blog-post">
     <p>Back in my days of working as a freelance photographer, I bought the domain name
@@ -100,7 +103,7 @@ confused yet I was unwilling to give up my domain. I procrastinated on what to d
 for an embarrasingly long time.</p>
 
 <p>Not anymore! Armed with my newly-acquired skills in Ruby and the ability to piece
-together a respectable front-end, I’ve decided to use <a href="https://jekyllrb.com/">Jekyll</a>
+together a respectable front-end, I&#39;ve decided to use <a href="https://jekyllrb.com/">Jekyll</a>
 (a static site generator), <a href="https://pages.github.com/">Github Pages</a>, <a href="http://getskeleton.com/">Skeleton</a>
 (a lightweight responsive CSS grid system), and some domain name tweaking to ditch
 Wordpress and create my own site pointing to my old custom domain.</p>
@@ -109,15 +112,15 @@ Wordpress and create my own site pointing to my old custom domain.</p>
 however I had already started a site a few weeks ago. Therefore, my Jekyll install was
 as easy as:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">project</span><span class="o">/</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">project</span><span class="o">/</span>
 <span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span>
-<span class="err">$</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+<span class="err">$</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></div>
 
-<p>That’s it! Well, at least in terms of things that has to be installed through the command line.
+<p>That&#39;s it! Well, at least in terms of things that has to be installed through the command line.
 Once installed, the real work was in re-organizing my existing files to fit the required
 Jekyll site structure, which in my case (as of writing this post) looks like this:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">├──</span> <span class="n">_config</span><span class="p">.</span><span class="nf">yml</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">├──</span> <span class="n">_config</span><span class="p">.</span><span class="nf">yml</span>
 <span class="err">├──</span> <span class="n">_layouts</span>
 <span class="o">|</span>   <span class="err">├──</span> <span class="n">default</span><span class="p">.</span><span class="nf">html</span>
 <span class="o">|</span>   <span class="err">└──</span> <span class="n">post</span><span class="p">.</span><span class="nf">html</span>
@@ -131,25 +134,25 @@ Jekyll site structure, which in my case (as of writing this post) looks like thi
 <span class="o">|</span>   <span class="err">└──</span> <span class="n">styles</span><span class="p">.</span><span class="nf">css</span>
 <span class="err">├──</span> <span class="n">assets</span>
 <span class="err">├──</span> <span class="no">CNAME</span>
-<span class="err">└──</span> <span class="n">index</span><span class="p">.</span><span class="nf">html_</span></code></pre></figure>
+<span class="err">└──</span> <span class="n">index</span><span class="p">.</span><span class="nf">html_</span></code></pre></div>
 
 <p>Once I got the hang of the organizational structure and made the mental connection
 that the files in the layouts folder worked very similarly to an .erb partial, the
 rest was pretty smooth sailing. It helps that Jekyll has been around for a while and
 has great documentation as well in case you get stuck. However, the one major hurdle
-I faced came from when accidentally capitalized “layout” in the front matter block
+I faced came from when accidentally capitalized &quot;layout&quot; in the front matter block
 and subsequently spent 30min wondering how I had inexplicably broken things.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
 <span class="no">Layout</span><span class="p">:</span> <span class="n">default</span> <span class="c1">#BAD!</span>
 <span class="ss">layout: </span><span class="n">default</span> <span class="c1">#GOOD!</span>
-<span class="o">---</span></code></pre></figure>
+<span class="o">---</span></code></pre></div>
 
 <p>NEVER AGAIN.</p>
 
 <p>Anyways, once I felt comfortable with things, the last thing for me to do was push my
 changes to GitHub Pages and check out my new site. I did it, and this page is proof it
-worked! I’m exited to continue refining the look and functionality of the site, and
+worked! I&#39;m exited to continue refining the look and functionality of the site, and
 and equally excited for how easy it is to make changes going forward.</p>
 
   </section>

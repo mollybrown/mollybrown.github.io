@@ -54,6 +54,14 @@
   color: #FF00B4;
 }
 
+.adventures:hover {
+  color: #FF00B4;
+}
+
+.navbar-link.adventures.current {
+	color: #FF00B4;
+}
+
 .linkedin:hover {
   color: #1b86bc;
 }
@@ -76,7 +84,6 @@
 
 .projects:hover {
 	color: #FED363;
-
 }
 
 .navbar-link.projects.current {
@@ -186,6 +193,31 @@
 	border-left: 2px solid #FED363;
 	padding-left: 15px;
 }
+
+.adventure h3 {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.15);
+	padding: 4px 8px;
+	color: white;
+	margin: 0;
+	border-bottom: 2px solid #ff00b4;
+	border-top: 2px solid #ff00b4;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: .2rem;
+	text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.adventure {
+  margin: 10px;
+  position: relative;
+}
+
 
 footer {
 	height: 75px;
