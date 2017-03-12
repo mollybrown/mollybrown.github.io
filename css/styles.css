@@ -243,3 +243,10 @@
 footer {
 	height: 75px;
 }
+
+img + em {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	color: #888;
+}
