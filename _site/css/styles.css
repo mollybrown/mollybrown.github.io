@@ -42,8 +42,8 @@
 	color: #5DBDB1;
 }
 
-.twitter:hover {
-  color: #1da1f2;
+.current-location-link {
+	text-decoration: none;
 }
 
 .instagram:hover {
@@ -51,7 +51,7 @@
 }
 
 .github:hover {
-  color: #FF00B4;
+  color: #1E2144;
 }
 
 .adventures:hover {
