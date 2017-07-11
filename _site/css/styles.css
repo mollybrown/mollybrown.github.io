@@ -43,7 +43,17 @@
 }
 
 .current-location-link {
+	color: #5DBDB1;
 	text-decoration: none;
+}
+
+.current-location-link:hover {
+	color: #F47E42;
+	transition: color .5s ease,border-color .5s ease,background .5s ease,opacity 1.5s ease;
+}
+
+.twitter:hover {
+  color: #1da1f2;
 }
 
 .instagram:hover {
