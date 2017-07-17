@@ -260,3 +260,8 @@ img + em {
 	padding: 10px;
 	color: #888;
 }
+
+.blog-end {
+  border: 1px solid #EE6948;
+  width: 80%
+}
